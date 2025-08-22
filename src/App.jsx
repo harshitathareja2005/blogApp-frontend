@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "./pages/Home";
-import AboutPage from "./pages/about";
+import AboutPage from "./pages/About";
 import AllBlogs from "./pages/AllBlogs";
 import AddBlog from "./pages/AddBlog";
 import SingleBlog from "./pages/SingleBlog";

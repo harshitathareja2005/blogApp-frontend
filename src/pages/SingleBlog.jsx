@@ -16,7 +16,7 @@ const SingleBlog = function () {
       async function fetchSingleBlog() {
         try {
           const response = await axios.get(
-            `http://localhost:8080/api/v1/blogs/${id}`
+            `https://blogapp-1-m4gi.onrender.com/api/v1/blogs/${id}`
           );
           setBlog(response.data);
           console.log(response.data);
@@ -33,7 +33,7 @@ const SingleBlog = function () {
 
   async function deleteBlog(id) {
     try {
-      axios.delete(`http://localhost:8080/api/v1/blogs/${id}`);
+      axios.delete(`https://blogapp-1-m4gi.onrender.com/api/v1/blogs/${id}`);
       toast("Blog Deleted");
       navigate("/blogs");
     } catch (error) {

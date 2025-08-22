@@ -10,7 +10,9 @@ const HomePage = function () {
   useEffect(function () {
     async function fetchRecentBlogs() {
       try {
-        const response = await axios.get("http://localhost:8080/api/v1/blogs");
+        const response = await axios.get(
+          "https://blogapp-1-m4gi.onrender.com/api/v1/blogs"
+        );
         setRecentblogs(response.data.slice(0, 3));
       } catch (error) {
         console.log(error);

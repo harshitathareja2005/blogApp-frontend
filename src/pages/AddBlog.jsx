@@ -27,7 +27,10 @@ const AddBlog = function () {
     console.log(newBlog);
     try {
       setIsLoading(true);
-      await axios.post("http://localhost:8080/api/v1/blogs", newBlog);
+      await axios.post(
+        "https://blogapp-1-m4gi.onrender.coms/api/v1/blogs",
+        newBlog
+      );
       navigate("/blogs");
 
       toast("new blog added!!!");

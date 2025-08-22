@@ -11,7 +11,9 @@ const AllBlogs = function () {
   useEffect(function () {
     async function fetchAllBlogs() {
       try {
-        const response = await axios.get("http://localhost:8080/api/v1/blogs");
+        const response = await axios.get(
+          "https://blogapp-1-m4gi.onrender.com/api/v1/blogs"
+        );
         setAllBlogs(response.data);
       } catch (error) {
         toast.error("error fetching blogs");
